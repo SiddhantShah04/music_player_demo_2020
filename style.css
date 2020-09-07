@@ -1,5 +1,5 @@
 /* Images created by: https://unsplash.com/@pawel_czerwinski */
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Satisfy&display=swap');
 html {
   box-sizing: border-box;
 }
@@ -11,19 +11,32 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  font-family: 'Satisfy', cursive;
   font-size: 12px;
 }
 
-
+.player-container{
+  height: 500px;
+  width:400px;
+  background: #66a3e0;
+  border-radius:20px;
+  box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3); 
+}
 
 .img-container {
-
+  height:300px;
+  width:300px;
   position: relative;
   top: -50px;
   left: 50px;
 }
 
+.img-container img{
+  height:100%;
+  width:100%;
+  object-fit: cover;
+  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.5); 
+}
 
 h2 {
   font-size: 25px;
@@ -89,7 +102,9 @@ h3 {
 
 /* Media Query: iPhone (Vertical) */
 @media screen and (max-width: 376px) {
-
+.player-container{
+  width:95vw;
+}
 
   .img-container {
     left: 29px;
