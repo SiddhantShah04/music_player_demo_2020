@@ -1,5 +1,6 @@
 /* Images created by: https://unsplash.com/@pawel_czerwinski */
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Satisfy&display=swap');
+
 html {
   box-sizing: border-box;
 }
@@ -87,12 +88,15 @@ h3 {
 
 .fas {
   font-size: 30px;
-  color: rgb(129, 129, 129);
+  color: rgb(0, 0, 0);
   margin-right: 30px;
-
+  cursor: pointer;
+  user-select: none;
 }
 
-
+.fas:hover{
+  filter:brightness(80%)
+}
 
 .main-button {
   font-size: 40px;
